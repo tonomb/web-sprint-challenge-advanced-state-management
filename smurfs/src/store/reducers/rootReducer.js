@@ -4,7 +4,7 @@ import {ADDED_SMURF, SMURFS_SUCCESS} from '../actions/actions'
 
 
 const initialState= {
-    smurfs: [],
+    smurfs: ['hello'],
     newSmurf: false
 }
 

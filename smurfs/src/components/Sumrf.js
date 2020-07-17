@@ -4,7 +4,7 @@ function Smurf({smurf}){
 
     return(
         <div>
-             <h3>{smurf.name}</h3>
+             <a href={`http://localhost:3000/smurf/${smurf.id}?name=${smurf.name}`}>{smurf.name}</a>
              <p>{smurf.age}</p>
              <p>{smurf.height}</p>
         </div>
