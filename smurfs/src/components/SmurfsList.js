@@ -6,9 +6,11 @@ import Smurf from './Sumrf'
 
 function SmurfsList(props){
 
+
     useEffect(()=>{
         props.fetchSmurfs()
-    },[props.newSmurf])
+        console.log('global smurfs state', props.smurfs);
+    },[])
 
 
     return(

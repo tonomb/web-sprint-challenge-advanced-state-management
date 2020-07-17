@@ -24,6 +24,10 @@ function AddSmurf(props){
 
     const submitHandler = (e) =>{
         e.preventDefault();
+        // setNewSmurf({ //this is nos synchronous
+        //     ...newSmurf,
+        //     height: newSmurf.height + 'cm'
+        // })
         props.addSmurf(newSmurf);
         setNewSmurf(initialFormState)
     }

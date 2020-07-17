@@ -9,11 +9,11 @@ export const addSmurf = (smurf) =>{
         .then(res =>{
             dispatch({
                 type: ADDED_SMURF,
-                payload: {smurfs: res.data}
+                payload: {smurfs: smurf}
             })
         })
         .catch(err =>{
-            console.log(err); //how to acces this error message
+            console.log('added Smurf failed', err.response);
         })
     }
 }

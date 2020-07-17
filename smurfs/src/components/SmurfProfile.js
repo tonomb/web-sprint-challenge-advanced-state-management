@@ -4,13 +4,15 @@ import {connect} from 'react-redux'
 
 function SmurfProfile(props){
  const params = useParams()
+ console.log('global smurfs state', props.smurfs);
+ console.log(params.id);
  console.log(props.smurfs);
- console.log(params);
     return(
         <div>
-             <h3>Smurf profile</h3>
-             {/* <p>{smurf.age}</p>
-             <p>{smurf.height}</p> */}
+            <h1>{props.smurfs[params.id].name}</h1>
+            <h2>{props.smurfs[params.id].age}</h2>
+            <h2>{props.smurfs[params.id].height}</h2>
+        
         </div>
     )
 }
